@@ -29,7 +29,7 @@ public class OpenAIEmbeddingSimilaritySearch
         if (response.IsSuccessStatusCode)
         {
             var responseContent = await response.Content.ReadAsStringAsync();
-            dynamic result = JsonConvert.DeserializeObject(responseContent);
+            dynamic result = JsonConvert.DeserializeObject(responseContent) ?? new { };
             // Calculate cosine similarity between embeddings (use appropriate math here)
             return result.data[0].embedding;
         }

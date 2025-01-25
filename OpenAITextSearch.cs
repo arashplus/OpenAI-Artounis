@@ -30,7 +30,7 @@ public class OpenAITextSearch
         if (response.IsSuccessStatusCode)
         {
             var responseContent = await response.Content.ReadAsStringAsync();
-            dynamic result = JsonConvert.DeserializeObject(responseContent);
+            dynamic result = JsonConvert.DeserializeObject(responseContent) ?? new { };
             return result.data[0].text;
         }
         else

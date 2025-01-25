@@ -29,7 +29,7 @@ public class OpenAIFileUpload
         if (response.IsSuccessStatusCode)
         {
             var responseContent = await response.Content.ReadAsStringAsync();
-            dynamic result = JsonConvert.DeserializeObject(responseContent);
+            dynamic result = JsonConvert.DeserializeObject(responseContent) ?? new { };
             return result.id;
         }
         else

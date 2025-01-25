@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace OpenAI_Artounis;
 
@@ -29,7 +30,7 @@ public class OpenAIMultipleModelsSupport
         if (response.IsSuccessStatusCode)
         {
             var responseContent = await response.Content.ReadAsStringAsync();
-            dynamic result = JsonConvert.DeserializeObject(responseContent);
+            dynamic result = JsonConvert.DeserializeObject(responseContent) ?? new { };
             return result.choices[0].text;
         }
         else

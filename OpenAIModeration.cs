@@ -28,7 +28,7 @@ public class OpenAIModeration
         if (response.IsSuccessStatusCode)
         {
             var responseContent = await response.Content.ReadAsStringAsync();
-            dynamic result = JsonConvert.DeserializeObject(responseContent);
+            dynamic result = JsonConvert.DeserializeObject(responseContent) ?? new { };
             return result.results[0].flagged.ToString();
         }
         else
