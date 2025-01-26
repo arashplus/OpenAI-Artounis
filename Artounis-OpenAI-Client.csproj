@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>OpenAI_Artounis</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>OpenAIClient</Title>
+    <Authors>Arash Seyedi</Authors>
+    <Company>Artounis</Company>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/arashplus/OpenAI-Artounis</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>OpenAI API client</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReleaseNotes>Release Notes for Version 1.0.0 - 2025-01-25
+
+Added:
+
+Initial release of Artounis-OpenAI-Client.
+A C# client library for interacting with OpenAI's API, supporting models like GPT-3, completions, embeddings, fine-tuning, and more.
+Provides simple methods for making API calls to OpenAI.
+Dependency: Added support for Newtonsoft.Json (&gt;= 13.0.3).
+NuGet Package:
+Published as a stable version.
+Supports netstandard2.0 and net9.0 frameworks.
+Features:
+
+Simplified interface for interacting with OpenAI’s GPT models.
+Ability to generate text completions, embeddings, and more.
+Support for OpenAI Fine-Tuning and Embeddings for similarity search.
+Basic moderation tools to filter out unsafe content.
+Documentation:
+
+A README.md file has been added to the package for detailed usage instructions.
+The LICENSE.txt file has been included with the MIT License.
+Known Issues:
+
+None reported as of version 1.0.0.</PackageReleaseNotes>
+    <Description>A C# client library for interacting with OpenAI's API, enabling access to models like GPT-3, completions, embeddings, fine-tuning, and more.</Description>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
