@@ -32,7 +32,7 @@ Here’s a basic example of how to use OpenAI-Artounis to generate text completi
 ## Initialize and Get a Completion
 
 ```C# Code
-using OpenAIArtounis;
+using OpenAI_Artounis;
 
 var config = new OpenAIConfig
 {
