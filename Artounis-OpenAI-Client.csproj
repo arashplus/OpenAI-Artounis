@@ -40,6 +40,7 @@ Known Issues:
 None reported as of version 1.0.0.</PackageReleaseNotes>
     <Description>A C# client library for interacting with OpenAI's API, enabling access to models like GPT-3, completions, embeddings, fine-tuning, and more.</Description>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
