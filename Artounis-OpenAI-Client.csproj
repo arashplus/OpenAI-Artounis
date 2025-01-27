@@ -14,33 +14,39 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>OpenAI API client</PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageReleaseNotes>Release Notes for Version 1.0.0 - 2025-01-25
-
-Added:
-
-Initial release of Artounis-OpenAI-Client.
-A C# client library for interacting with OpenAI's API, supporting models like GPT-3, completions, embeddings, fine-tuning, and more.
-Provides simple methods for making API calls to OpenAI.
-Dependency: Added support for Newtonsoft.Json (&gt;= 13.0.3).
+    <PackageReleaseNotes>New Features:
+Added the OpenAIStreamProcessing class for handling streaming responses from OpenAI’s API.
+Introduced OpenAICache class to cache OpenAI responses and avoid redundant API calls.
+Added OpenAIUsageStats class to track API usage, request counts, and token usage.
+New OpenAIModelManager class to manage OpenAI models and their configurations.
+Implemented OpenAIRequestLogger class to log requests and responses for debugging purposes.
+Added OpenAITokenManager to securely manage and retrieve API tokens.
+Introduced OpenAIModelTrainer and OpenAIFinetuningHelper classes for training and fine-tuning OpenAI models.
+New OpenAIExceptionHandler class to log exceptions both locally (in JSON format) and to a monitoring system (via HTTP POST).
+Enhancements:
+Optimized the library for better performance and scalability by adding caching and stats tracking.
+Features:
+Access OpenAI models like GPT-3, GPT-4, and other available models.
+Generate text completions, summaries, embeddings, and more.
+Support for OpenAI Fine-Tuning and Embeddings for similarity search.
+Use moderation tools to filter unsafe content.
+Support for streaming data processing from OpenAI’s API.
+Caching of OpenAI responses for efficient use.
+Track API usage and token consumption with OpenAIUsageStats.
+Easily manage OpenAI models with the OpenAIModelManager.
+Log requests, responses, and exceptions to local files and monitoring systems.
+Documentation:
+README.md file has been updated to include new features and examples for the newly added classes.
+The LICENSE.txt file has been included with the MIT License.
 NuGet Package:
 Published as a stable version.
 Supports netstandard2.0 and net9.0 frameworks.
-Features:
-
-Simplified interface for interacting with OpenAI’s GPT models.
-Ability to generate text completions, embeddings, and more.
-Support for OpenAI Fine-Tuning and Embeddings for similarity search.
-Basic moderation tools to filter out unsafe content.
-Documentation:
-
-A README.md file has been added to the package for detailed usage instructions.
-The LICENSE.txt file has been included with the MIT License.
+Version 1.1.1 includes minor updates and patch fixes based on user feedback.
 Known Issues:
-
-None reported as of version 1.0.0.</PackageReleaseNotes>
+None reported as of version 1.1.1.</PackageReleaseNotes>
     <Description>A C# client library for interacting with OpenAI's API, enabling access to models like GPT-3, completions, embeddings, fine-tuning, and more.</Description>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <Version>1.0.1</Version>
+    <Version>1.1.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
