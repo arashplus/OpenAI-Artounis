@@ -12,10 +12,10 @@ A C# client library for interacting with OpenAI's API, providing easy access to 
 
 ## Installation
 
-You can install the **OpenAI-Artounis** library via [NuGet](https://www.nuget.org/packages/OpenAI-Artounis).
+You can install the **Artounis-OpenAI-Client** library via [NuGet](https://www.nuget.org/packages/Artounis-OpenAI-Client).
 
 ```bash
-Install-Package OpenAI-Artounis
+Install-Package Artounis-OpenAI-Client
 ```
 
 Alternatively, you can clone the repository and build it from source:
